@@ -1,6 +1,6 @@
 // 4.	Número aleatorio en un rango. Crear una función numeroAleatorio(min, max) que devuelva un número entero entre min y max (incluidos)
 
-console.log("Ejercicio 2(3.)");
+console.log("Ejercicio 2(4.)");
 document.write("<h3>Ejercicio 2 - Número aleatorio</h3>");
 
 let min, max;
