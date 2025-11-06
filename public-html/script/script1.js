@@ -12,7 +12,7 @@ let precio; // Variable precio
 do {
     precio = parseFloat(prompt("Ingrese el precio del producto (número decimal):"));
     if (precio % 1 === 0 || precio <= 0 || isNaN(precio)) { // Debe ser un número. No debe ser entero, no menor a 0
-        alert("DATOS NO VÁLIDO.\nINGRESE DE NUEVO.")
+        alert("DATO NO VÁLIDO.\nINGRESE DE NUEVO.")
     }
 } while (isNaN(precio) || precio <= 0 || precio % 1 === 0);
 
