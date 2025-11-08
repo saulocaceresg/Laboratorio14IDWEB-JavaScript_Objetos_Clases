@@ -25,6 +25,7 @@ class Producto {
     }
 
     set precio(precio) {
+        precio = Number(precio).toFixed(2); // Convertir a número en caso de que sea cadena
         if (precio > 0) {
             this.#precio = precio;
         } else {
@@ -32,7 +33,7 @@ class Producto {
         }
     }
     get precio() {
-        return this.#precio;
+        return "$" + this.#precio;
     }
 
     set stock (stock) {
@@ -69,3 +70,18 @@ producto.vender(9);
 producto.vender(3);
 
 producto.vender(2);
+
+// 12.	Modificar Producto para que el getter precio devuelva el valor con formato de moneda ($120.00) y que el setter acepte tanto número como cadena ("120.5")
+// Tip: puedes usar Number() y toFixed(2)
+
+console.log("Ejercicio 10 (12.)");
+document.write("<h3>Ejercicio 10 - Inventario_Modificación</h3>");
+
+producto.precio = "1205.434";
+
+console.log("Precio actual del producto: " + producto.precio);
+document.write(`<p><b>Precio actual del producto:</b> ${producto.precio}</p>`);
+
+producto.precio = 1235.434;
+console.log("Precio actual del producto: " + producto.precio);
+document.write(`<p><b>Precio actual del producto:</b> ${producto.precio}</p>`);
