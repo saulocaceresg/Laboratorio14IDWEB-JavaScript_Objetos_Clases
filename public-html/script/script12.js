@@ -5,7 +5,7 @@
 //      Tip: llama a super.calcularSueldo() desde la subclase
 
 console.log("Ejercicio 14 (16.)");
-document.write("<h3>Ejercicio 14 - Polimorfismo</h3>");
+document.write("<h3>Ejercicio 14 - Herencia (Padre, hijo, nieto)</h3>");
 
 // Clase PADRE
 class Empleado {
